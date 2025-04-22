@@ -1,0 +1,10 @@
+server:
+  persistentVolume:
+    enabled: true
+    size: 4Gi
+    accessModes:
+      - ReadWriteOnce
+
+alertmanager:
+  persistence:
+    size: 1Gi

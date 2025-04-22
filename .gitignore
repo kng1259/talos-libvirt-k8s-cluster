@@ -1,0 +1,4 @@
+logs
+.vagrant
+talosconfigs
+kubeconfig
