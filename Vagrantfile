@@ -1,6 +1,6 @@
 home = ENV['HOME']
 isos = "#{home}/.isos/talos-iscsi.iso"
-serial = "#{home}/Code/TalosVMs"
+serial = "#{home}/Code/talos-libvirt-k8s-cluster"
 nodes = {
     "control-plane-node" => { count: 3, cpus: 2, storage: '15G', memory: 2048 },
     "worker-node" => { count: 3, cpus: 2, storage: '35G', memory: 2048 }
