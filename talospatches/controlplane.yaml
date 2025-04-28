@@ -2,11 +2,10 @@ machine:
   # Enables DHCP and sets a VIP for the control plane network interface
   network:
     interfaces:
-      - deviceSelector:
-          physical: true # should select any hardware network device, if you have just one, it will be selected
+      - interface: ens6
         dhcp: true
         vip:
-          ip: 192.168.121.3
+          ip: 172.28.128.3
 
   # Allow kubelet to rotate server certificates to allow metrics service to work
   kubelet:

@@ -1,0 +1,6 @@
+machine:
+  # Enables DHCP and sets a VIP for the control plane network interface
+  network:
+    interfaces:
+      - interface: ens6
+        dhcp: true
