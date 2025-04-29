@@ -8,7 +8,7 @@ metadata:
 
 spec:
   rules:
-    - host: grafana.localhost
+    - host: grafana.kng.k8s.dev.local
       http:
         paths:
           - path: /

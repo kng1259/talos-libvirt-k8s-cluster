@@ -8,7 +8,7 @@ metadata:
 
 spec:
   rules:
-    - host: longhorn.localhost
+    - host: longhorn.kng.k8s.dev.local
       http:
         paths:
           - path: /
