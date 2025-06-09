@@ -1,8 +1,0 @@
-primary:
-  persistence:
-    enabled: true
-    size: 5Gi
-    accessModes:
-      - ReadWriteOnce
-metrics:
-  enabled: true

@@ -1,2 +1,1 @@
-kubectl apply -f namespace.yaml
-helm install postgresql bitnami/postgresql -f values.yaml -n database
+helm install cnpg --namespace cnpg-system --create-namespace cnpg/cloudnative-pg

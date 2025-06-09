@@ -8,6 +8,7 @@ talosctl config endpoint ${control[@]}
 talosctl -n ${control[0]} apply-config --insecure --file talosconfigs/controlplane.yaml
 sleep 300
 talosctl -n ${control[0]} bootstrap
+sleep 100
 for i in "${control[@]:1}"; do
     talosctl -n $i apply-config --insecure --file talosconfigs/controlplane.yaml
 done

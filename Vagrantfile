@@ -2,8 +2,8 @@ home = ENV['HOME']
 isos = "#{home}/.isos/talos-iscsi.iso"
 serial = "#{home}/Code/talos-libvirt-k8s-cluster"
 nodes = {
-    "control-plane-node" => { count: 1, cpus: 2, storage: '20G', memory: 2048 },
-    "worker-node" => { count: 3, cpus: 2, storage: '50G', memory: 2048 }
+    "control-plane-node" => { count: 1, cpus: 4, storage: '20G', memory: 3072 },
+    "worker-node" => { count: 3, cpus: 2, storage: '50G', memory: 3072 }
 }
 
 Vagrant.configure("2") do |config|
